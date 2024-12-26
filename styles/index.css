@@ -66,7 +66,7 @@ nav .hamburger {
     display: flex;
     gap: 32px;
     list-style: none;
-    z-index: 99;
+    z-index: 100 !important;
 }
 
 .nav-menu a {
@@ -221,7 +221,7 @@ nav .hamburger {
     max-width: 1280px;
     margin: 80px auto;
     text-align: center;
-    z-index: -1 !important;
+    z-index: 1 !important;
 }
 
 .menu h2 {
@@ -229,7 +229,6 @@ nav .hamburger {
     font-size: 36px;
     line-height: 48px;
     position: relative;
-    z-index: 1;
 }
 
 .menu p {
@@ -238,7 +237,6 @@ nav .hamburger {
     font-size: 20px;
     color: #666666;
     position: relative;
-    z-index: 1;
 }
 
 .menu-container {
@@ -251,6 +249,7 @@ nav .hamburger {
     flex-wrap: wrap;
     padding: 64px 0;
     gap: 40px 0;
+    z-index: 99 !important;
 }
 
 .card-menu {
@@ -301,6 +300,24 @@ nav .hamburger {
     font-weight: 500;
     font-size: 24px;
     line-height: 32px;
+}
+
+.card-menu-button {
+    font-weight: 500;
+    font-size: 18px;
+    padding: 16px 36px;
+    margin: 0 16px 16px 16px;
+    border-radius: 16px;
+    border: 0px;
+    cursor: pointer;
+    background-color: #F03328;
+    color: #fff;
+}
+
+.card-menu-button:hover {
+    background-color: #fff;
+    color: #F03328;
+    border: 1px solid #ff0d00;
 }
 
 .testimonials {
@@ -437,7 +454,7 @@ footer {
     align-items: center;
     gap: 96px;
     position: relative;
-    z-index: -1;
+    z-index: 1;
 }
 
 .about-content {
@@ -471,7 +488,7 @@ footer {
     padding: 64px 0;
     gap: 40px;
     position: relative;
-    z-index: -1
+    z-index: 1
 }
 
 .contact-content {
@@ -524,6 +541,246 @@ footer {
     flex-direction: row;
     align-items: center;
     gap: 16px;
+}
+
+/* Order */
+
+.order {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 64px 0;
+    gap: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.order-header {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.order-header h1 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+}
+
+.order-header p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #666666;
+}
+
+.order-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.order-form {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 40px;
+    border-radius: 40px;
+    background-color: #F8F8F8;
+}
+
+.order-form h2 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.order-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.order-form input {
+    width: 100%;
+    padding: 8px 20px;
+    border-radius: 8px;
+    border: 1px solid #D9D9D9;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.order-button {
+    width: 100%;
+    padding: 16px 20px;
+    border-radius: 8px;
+    border: 0px;
+    cursor: pointer;
+    background-color: #F03328;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.order-tambah-button {
+    width: 100%;
+    padding: 16px 20px;
+    border-radius: 8px;
+    border: 0px;
+    cursor: pointer;
+    background-color: transparent;
+    color: #F03328;
+    border: #F03328 solid 1px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.order-pizza-container {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.order-form select {
+    width: 100%;
+    padding: 16px 20px;
+    border-radius: 8px;
+    border: 1px solid #D9D9D9;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.order-quantity {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+
+.order-quantity button {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #D9D9D9;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.order-summary-container {
+    flex: 2;
+}
+
+.order-summary {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 40px;
+    border-radius: 40px;
+    background-color: #F8F8F8;
+}
+
+.order-summary h2 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.delete-pizza-button {
+    padding: 8px 24px;
+    border-radius: 8px;
+    border: 1px solid #D9D9D9;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    font-size: 12px;
+}
+
+#order-summary-table {
+    width: 100%;
+    border: 1px solid #000;
+    border-radius: 24px;
+    text-align: left;
+    padding: 16px;
+    font-size: 14px;
+}
+
+#order-summary-table th {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.modal {
+    display: none;  /* Initially hidden */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);  /* Semi-transparent background */
+    z-index: 9999;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10% auto;
+    width: 70%;
+    max-width: 500px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.receipt-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+}
+
+.receipt-table th, .receipt-table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+.receipt-total {
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.receipt-footer {
+    font-size: 0.8em;
+    margin-top: 20px;
+    color: #666;
+}
+
+.download-button, .close-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.close-button {
+    background-color: #f44336;
+}
+
+.download-button:hover, .close-button:hover {
+    opacity: 0.8;
 }
 
 /* Responsive */
@@ -754,11 +1011,13 @@ footer {
     .menu h2 {
         font-size: 28px;
         line-height: 28px;
+        z-index: -1 !important;
     }
 
     .menu p {
         font-size: 14px;
         line-height: 20px;
+        z-index: -1 !important;
     }
 
     .menu-container {
@@ -771,6 +1030,7 @@ footer {
         width: 100%;
         flex-direction: column;
         gap: 12px;
+        z-index: 99;
     }
 
     .card-menu img {
@@ -855,9 +1115,10 @@ footer {
     /* About */
     .about {
         margin: 0;
-        padding: 0 32px;
+        padding: 0 32px 0 32px !important;
         gap: 24px;
         flex-direction: column-reverse;
+        z-index: -1;
     }
 
     .about h2 {
@@ -994,7 +1255,7 @@ footer {
     /* About */
     .about {
         margin: 0;
-        padding: 80px 32px 0 32px !important;
+        padding: 80px 32px 0 32px;
         gap: 24px;
         flex-direction: column-reverse;
     }
